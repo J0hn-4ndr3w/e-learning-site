@@ -14,7 +14,7 @@
   --testimony-color: rgb(206, 210, 253);
 
   /* font-size */
-  --main-text: 3.5rem;
+  --main-text: 3rem;
   --scd-text: 2.5rem;
   --offer-text: 2rem;
   --trd-text: 1.5rem;
@@ -118,13 +118,14 @@ cursor: pointer;
 
 .home-container{
   width: 100%;
+  margin: auto;
   display: flex;
 }
 
 .text-area{
   width: 50%;
   font-size: var(--main-text);
-  margin-top: 10rem;
+  margin-top: 8rem;
 }
 
 .text-area p{
@@ -152,8 +153,7 @@ background: linear-gradient(34deg, rgba(131,216,244,1) 18%, rgba(187,156,244,1) 
 }
 
 .image-area img{
-  margin-top: 5%;
-  margin-left: 28%;
+  margin-left: 9rem;
   height: 600px;
   width: 450px;
 }
