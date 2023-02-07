@@ -353,6 +353,10 @@ background: linear-gradient(34deg, rgba(131,216,244,1) 18%, rgba(187,156,244,1) 
   margin: 10% 0;
 }
 
+.student-testimony img{
+  display: none;
+}
+
 .student-testimony h1{
   font-size: var(--main-text);
   margin-bottom: 3rem;
@@ -590,27 +594,10 @@ background: linear-gradient(34deg, rgba(131,216,244,1) 18%, rgba(187,156,244,1) 
   padding: .4rem 1.8rem;
   }
 
- .text-area{
-  width: 90%;
-  margin-top: 4rem;
- }
-
- .image-area{
-  width: 10%;
- }
-
- .image-area img{
-  margin-left: -7.5rem;
-  width: 200px;
-  height: 400px;
- }
-
- .bg-gradient{
-  width: 11rem;
-  height: 12rem;
- }
+ 
  .menu{
   display: block;
+  font-size: 2.5rem;
  }
 
  .header{
@@ -635,7 +622,7 @@ background: linear-gradient(34deg, rgba(131,216,244,1) 18%, rgba(187,156,244,1) 
 
  .header ul li a{
   text-decoration: none;
-  color: var(--p-text-color);
+  color: var(--black-text-color);
   font-size: var(--scd-text);
 }
 
@@ -647,6 +634,84 @@ background: linear-gradient(34deg, rgba(131,216,244,1) 18%, rgba(187,156,244,1) 
 }
  .open{
   top: var(--main-text);
+ }
+
+ /* ------------------- */
+
+ .home-container{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-area{
+  width: 90%;
+  margin-top: 4rem;
+ }
+
+ .image-area{
+  width: 100%;
+  margin-top: -20%;
+ }
+
+ .image-area img{
+  margin-left: 6.5rem;
+  width: 230px;
+  height: 350px;
+ }
+
+ .bg-gradient{
+  width: 15rem;
+  height: 10rem;
+  left: 6rem;
+  bottom: 0.4rem;
+ }
+
+ /* ---------- */
+
+ .sub-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  }
+
+  .sub-section1, .sub-section2{
+    width: 100%;
+  }
+/* ------------ */
+.offer{
+  width: 100%;
+  min-height: 70vh;
+  margin: 15vh 0;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.text-offer{
+  width: 100%;
+}
+
+.text-offer button{
+  margin-left: 30%;
+}
+
+.text-offer h1{
+  margin: 0 0 2rem 2rem;
+  width: 80%;
+ }
+
+ .list-offer{
+  width: 80%;
+  margin: 0 3rem;
+ }
+
+ .offers{
+  width: 6rem;
+ }
+
+ .offers p{
+  margin-bottom: 1rem;
  }
 
  .guide{
@@ -679,29 +744,44 @@ background: linear-gradient(34deg, rgba(131,216,244,1) 18%, rgba(187,156,244,1) 
   line-height: 8rem;
 }
 
+/* ------- */
+.testimonials{
+  height: 100%;
+}
+/* .testimonial{
+  height: -5rem;
+} */
  .testimonials img{
-  height: 400px;
-  width: 150px;
-  /* margin-left: -.1rem; */
+  display: none;
  }
 
- .text-offer{
-  width: 35%;
+ .testimony{
+  width: 90%;
  }
 
- .text-offer h1{
-  margin: 20% 0;
+ .student-testimony{
+  height: 30%;
  }
-
- .offers{
-  width: 6rem;
+ .student-testimony h1{
+  margin: 0 0 2rem 0;
  }
-
- .offers p{
-  margin-bottom: 1rem;
+ .student-testimony h2{
+  margin: 0 0 2rem 0;
+ }
+ .student-testimony img{
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  margin: 0 0 1rem 0;
+  border: 1px solid var(--text-blue);
+  border-radius: 50%;
  }
 
  .career{
   min-height: 40vh;
  }
+
+ .footer ul{
+  gap: 2rem;
+  }
 }
