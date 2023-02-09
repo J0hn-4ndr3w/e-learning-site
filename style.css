@@ -648,6 +648,7 @@ background: linear-gradient(34deg, rgba(131,216,244,1) 18%, rgba(187,156,244,1) 
     display: block;
     width: 5rem;
     height: 5rem;
+    margin-bottom: 1rem;
     border: 1px solid var(--text-blue);
     border-radius: 50%;
     padding: 0;
@@ -733,6 +734,10 @@ background: linear-gradient(34deg, rgba(131,216,244,1) 18%, rgba(187,156,244,1) 
   .list-guide {
     display: flex;
     margin-top: 1rem;
+  }
+  
+  .testimonial {
+    height: 23rem;
   }
 
   .testimonials {
