@@ -753,7 +753,7 @@ background: linear-gradient(34deg, rgba(131,216,244,1) 18%, rgba(187,156,244,1) 
     gap: 0.5rem;
   }
 
-  .logo{
+  .footer .logo{
     max-height: 2rem;
   }
 }
