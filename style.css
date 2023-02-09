@@ -32,7 +32,7 @@ body{
   /* background-color: grey; */
   overflow: hidden;
   position: relative;
-  transition: all 2s ease-in;
+  transition: all 0.45s ease-in;
 }
 .menu{
   display: none;
@@ -147,31 +147,33 @@ cursor: pointer;
 
 .image-area{
   width: 50%;
+  height: 100%;
   position: relative;
-  z-index: -10000;
+  padding: 0 0 0 6rem;
 }
 
 .bg-gradient{
   position: absolute;
   background: rgb(131,216,244);
 background: linear-gradient(34deg, rgba(131,216,244,1) 18%, rgba(187,156,244,1) 38%, rgba(234,190,229,1) 65%, rgba(241,141,167,1) 85%);
-  width: 75%;
-  height: 48vh;
+  width: 58%;
+  height: 50%;
   border-radius: 7rem;
   bottom: 8px;
-  right: 0;
   z-index: -1;
 }
 
 .image-area img{
-  margin-left: 9rem;
   height: 600px;
-  width: 450px;
+  width: 65%;
 }
 
+
+/* --sub-section */
 .sub-section{
   display: flex;
   justify-content: space-between;
+  height: 8rem;
 }
 .sub-section1{
   width: 30%;
@@ -201,42 +203,46 @@ background: linear-gradient(34deg, rgba(131,216,244,1) 18%, rgba(187,156,244,1) 
   color: var(--p-text-color);
 }
 
+
+/* offer-section */
 .offer{
   width: 100%;
-  min-height: 50vh;
+  height: auto;
   background: rgb(131,216,244);
   background: linear-gradient(34deg, rgba(131,216,244,1) 18%, rgba(187,156,244,1) 38%, rgba(234,190,229,1) 65%, rgba(241,141,167,1) 85%);
-  margin: 25vh 0;
+  margin: 8rem 0;
   display: flex;
   border-radius: 100px;
+  padding: 0;
 }
 
 .text-offer{
   width: 40%;
-  margin: 5%;
+  margin: 3rem;
 }
 
 
 .text-offer h1{
-  width: 500px;
+  width: 90%;
   font-size: var(--main-text);
   margin-bottom: 10%;
 }
 
 .list-offer{
   width: 50%;
+  /* min-height: 20vh; */
 }
 
 .offer-wrapper{
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  margin: 10% 0;
+  margin: 3rem;
 }
 
 .offers{
-  width: 17rem;
-  min-height: 23vh;
+  width: 60%;
+  min-height: 15vh;
 }
 
 .offers-icon{
@@ -270,11 +276,13 @@ background: linear-gradient(34deg, rgba(131,216,244,1) 18%, rgba(187,156,244,1) 
   line-height: 1.5rem;
 }
 
+
+/* guide-section */
 .guide{
   width: 100%;
-  min-height: 60vh;
+  min-height: 35rem;
   display: flex;
-  margin: 20vh 0;
+  margin: 8rem 0;
 }
 
 .guide1 h1{
@@ -317,17 +325,20 @@ background: linear-gradient(34deg, rgba(131,216,244,1) 18%, rgba(187,156,244,1) 
 .guide01{
   display: none;
 }
+
+
+/* testimonials-section */
 .testimonials{
   width: 100%;
-  min-height: 60vh;
-  margin: 20vh 0;
+  height: 70vh;
+  margin: 8rem 0;
   position: relative;
 }
 .testimonial{
   position: absolute;
   width: 100%;
-  min-height: 60vh;
-  bottom: 0vh;
+  height: 27.5rem;
+  top: 7rem;
   display: flex;
   background-color: var(--testimony-color);
   border-radius: 5rem;
@@ -337,19 +348,18 @@ background: linear-gradient(34deg, rgba(131,216,244,1) 18%, rgba(187,156,244,1) 
 
 
 .testimonials img{
-  height: 80vh;
-  width: 35%;
-  margin-left: 5rem;
-  margin-bottom: -1rem;
+  width: 40%;
+  max-height: 90%;
+  padding: 0 0 5rem 5rem;
 }
 
 .testimony{
   width: 50%;
+  height: auto;
 }
 
 .student-testimony{
   width: 80%;
-  height: 80%;
   margin: 10% 0;
 }
 
@@ -378,10 +388,7 @@ background: linear-gradient(34deg, rgba(131,216,244,1) 18%, rgba(187,156,244,1) 
 /* career */
 .career{
   width: 100%;
-  min-height: 60vh;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
+  height: 60vh;
   text-align: center;
   position: relative;
   border-bottom: 0.1px solid var(--p-text-color);
@@ -390,13 +397,12 @@ background: linear-gradient(34deg, rgba(131,216,244,1) 18%, rgba(187,156,244,1) 
 .career-element{
   position: absolute;
   width: 100%;
-  min-height: 50vh;
+  height: 100%;
   background: rgb(131,216,244);
   background: linear-gradient(34deg, rgba(131,216,244,1) 18%, rgba(187,156,244,1) 38%, rgba(234,190,229,1) 65%, rgba(241,141,167,1) 85%);
   opacity: 0.15;
   border-radius: 50%;
   top: 0;
-  /* left: 25%; */
   z-index: -1;
 }
 
@@ -421,7 +427,7 @@ background: linear-gradient(34deg, rgba(131,216,244,1) 18%, rgba(187,156,244,1) 
   background-color: var(--main-bg-color);
   line-height: 2rem;
   font-size: 1.3rem;
-  margin: 3rem 0;
+  padding: 3rem 0;
 }
 
 .footer ul{
@@ -432,356 +438,251 @@ background: linear-gradient(34deg, rgba(131,216,244,1) 18%, rgba(187,156,244,1) 
 
 .footer ul li a{
   text-decoration: none;
-  color: var(--black-text-color);
+  color: var(--p-text-color);
   font-size: var(--p-text);
   font-weight: bolder;
 }
 
 .footer ul li a:hover{
-  color: var(--p-text-color);
+  color: var(--black-text-color);
 }
 
-
-@media (max-width: 1200px){
-  :root{
-     /* font-size */
-  --main-text: 2.5rem;
-  --scd-text: 2rem;
-  --offer-text: 1.5rem;
-  --trd-text: 1rem;
-  --p-text: 0.5rem;
+/* for desktop */
+@media (max-width: 1700px){
+  #main-container{
+    max-width: 100%;
+    margin: 0;
+    padding: 0 2rem;
   }
 
-  .image-area img{
-    margin-left: 7rem;
-    height: 500px;
-    width: 350px;
+  .footer{
+    padding: 3rem 3rem 3rem 0;
+  }
+}
+@media (max-width: 1220px){
+  :root{
+    --main-text: 2.5rem;
+    --scd-text: 2rem;
+    --offer-text: 1.5rem;
+    --trd-text: 1rem;
+    --p-text: 0.5rem;
+    }
+
+    .testimonials img{
+      height: 100vh;
+    }
+
+    .testimonial{
+      top: 7rem;
+    }
+
+    .career{
+      height: 40vh;
+    }
+}
+@media (max-width: 1110px){
+  .image-area{
+    padding: 0 0 0 0;
+  }
+}
+
+/* for large screen */
+@media (max-width: 991px){
+  .text-area{
+    width: 60%;
   }
 
   .testimonials img{
-    margin-bottom: -0.7rem;
-  }
-  
-
-  .footer .logo{
-    height: 2rem;
+    padding: 0 0 4.9rem 3rem;
   }
 }
 
-@media (max-width: 991px){
-  .text-area{
-    width: 70%;
+/* tablet/ipod */
+@media (max-width: 940px){
+  :root{
+  --main-text: 3rem;
+  --scd-text: 2.5rem;
+  --offer-text: 2rem;
+  --trd-text: 1.5rem;
+  --p-text: 1rem;
   }
 
+  .home-container{
+    flex-direction: column;
+    margin: 0 0 8rem 0;
+  }
+
+  .text-area{
+    width: 100%;
+    height: 30vh;
+  }
   .image-area{
-    width: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 45vh;  
+  }
+
+  .image-area img{
+    height: 450px;
+    width: 50%;
   }
 
   .bg-gradient{
-    width: 20rem;
-    left: -6rem;
+    width: 50%;
   }
 
-  .image-area img{
-    margin-left: -7rem;
-    height: 500px;
-    width: 350px;
+  .menu{
+    display: block;
   }
 
-  .offer-wrapper{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    margin: 7% 0;
+  .header{
+    height: 3rem;
+    line-height: 3rem;
   }
 
-  .text-offer{
-    width: 45%;
-  }
-  
-  .offers{
-    width: 12rem;
-    min-height: 23vh;
-  }
-
-  .offers p{
-    letter-spacing: 1.3px;
-    font-size: var(--p-text);
-    width: 70%;
-    line-height: 1rem;
+  .menus{
+    position: absolute;
+    width: 15rem;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--testimony-color);
+    top: -35rem;
+    right: 5rem;
+    border-radius: 5rem;
+    transition: all 0.45s ease;
   }
 
-  .testimonials img{
-    margin-left: 4rem;
-    margin-bottom: -0.7rem;
+  .open{
+    position: absolute;
+    width: 15rem;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--testimony-color);
+    right: 5rem;
+    top: 3rem;
+    border-radius: 5rem;
   }
 
-  .footer ul{
-    gap: 3rem;
-  }
-}
-
-@media (max-width: 768px){
-  :root{
-    /* font-size */
- --main-text: 2rem;
- --scd-text: 1.5rem;
- --offer-text: 1rem;
- --trd-text: 0.8rem;
- --p-text: 0.5rem;
- }
-
- .logo{
-  height:2rem;
- }
-
- .bg-gradient{
-  width: 19rem;
-  left: -7rem;
-  bottom: 0.4rem;
-}
-
-.image-area img{
-  margin-left: -6.5rem;
-  height: 500px;
-  width:280px;
-}
-
-.offer{
-  padding: 2vh 0;
-}
-
-.text-offer h1{
-  width: 100%;
-}
-
-.offers{
-  width: 9rem;
-}
-
-.testimonials img{
-  margin-left: 2rem;
-  margin-bottom: -0.7rem;
-}
-
-.student-testimony h1{
-  margin-top: 2.5rem;
-}
-.student-testimony h2{
-  line-height: 1.2rem;
-}
-
-.career p{
-  margin-bottom: 3rem;
-}
-}
-
-@media (max-width: 450px){
-  :root{
-    /* font-size */
- --main-text: 1.5rem;
- --scd-text: 1rem;
- --offer-text: 0.8rem;
- --trd-text: 0.7rem;
- --p-text: 0.5rem;
- }
-
- #main-container{
-  overflow: visible;
- }
-
- button{
-  padding: .4rem 1.8rem;
-  }
-
- 
- .menu{
-  display: block;
-  font-size: 2.5rem;
- }
-
- .header{
-  position: relative;
- }
-
- .menus{
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  top: -30rem;
-  right: 0;
-  /* bottom: 2rem; */
-  width: 10rem;
-  background: rgb(131,216,244);
-  background: linear-gradient(34deg, rgba(131,216,244,1) 18%, rgba(187,156,244,1) 38%, rgba(234,190,229,1) 65%, rgba(241,141,167,1) 85%);
-  border-radius: 3rem;
-  transition: all 0.9s ease;
- }
-
- .header ul li a{
-  text-decoration: none;
-  color: var(--black-text-color);
-  font-size: var(--scd-text);
-}
-
-.header ul li a:hover{
-  color: var(--p-text-color);
-   background-color: var(--black-text-color);
-  padding: 0.3rem;
-  border-radius: 10px;
-}
- .open{
-  top: var(--main-text);
- }
-
- /* ------------------- */
-
- .home-container{
-  width: 100%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-}
-
-.text-area{
-  width: 90%;
-  margin-top: 4rem;
- }
-
- .image-area{
-  width: 100%;
-  margin-top: -25%;
- }
-
- .image-area img{
-  margin-left: 6.5rem;
-  width: 230px;
-  height: 350px;
- }
-
- .bg-gradient{
-  width: 15rem;
-  height: 10rem;
-  left: 6rem;
-  bottom: 0.4rem;
- }
-
- /* ---------- */
-
- .sub-section{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  .sub-section{
+    flex-direction: column;
   }
 
   .sub-section1, .sub-section2{
     width: 100%;
   }
-/* ------------ */
-.offer{
-  width: 100%;
-  min-height: 70vh;
-  margin: 15vh 0;
-  display: flex;
-  flex-direction: column-reverse;
+
+  .offer{
+    flex-direction: column-reverse;
+  }
+
+  .text-offer{
+    margin: 0 3rem 3rem 3rem;
+  }
+
+  .text-offer, .list-offer{
+    width: 90%;
+  }
+
+  .text-offer button{
+    margin: auto;
+  }
+
+  .text-offer h1{
+    max-width: 800px;
+    margin-bottom: 5%;
+  }
+
+  .offers{
+    width: 90%;
+    height: 10%;
+  }
+
+  .guide{
+    display: none;
+  }
+
+  .guide01{
+    display: block;
+  }
+
+  .guide01{
+    font-size: var(--main-text);
+  }
+
+
+  .guide001{
+    max-width: 100%;
+  }
+
+  .guide001 .guide-text{
+    max-width: 80%;
+  }
+
+  .testimonial{
+    justify-content: flex-start;
+  }
+
+  .testimonials img{
+    display: none;
+  }
+
+  .testimony{
+    width: 80%;
+  }
+
+  .student-testimony{
+    width: 100%;
+    margin: 2rem 3rem;
+  }
+
+  .student-testimony h1{
+    margin-bottom: 1rem;
+  }
+
+  .student-testimony img{
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid var(--text-blue);
+    border-radius: 50%;
+    padding: 0;
+  }
+
+  .footer ul{
+    gap: 1.5rem;
+  }
 }
 
-.text-offer{
-  width: 100%;
-}
+/* mobile phone */
+@media (max-width: 580px){
+  :root{
+    --main-text: 2.5rem;
+    --scd-text: 1.5rem;
+    --offer-text: 1rem;
+    --trd-text: 0.8rem;
+    --p-text: 0.5rem;
+    }
 
-.text-offer button{
-  margin-left: 30%;
-}
+  .text-offer{
+    margin: 0 3rem 3rem 3rem;
+  }
 
-.text-offer h1{
-  margin: 0 0 2rem 2rem;
-  width: 80%;
- }
+  .text-offer h1{
+    max-width: 100%;
+    margin-bottom: 5%;
+  }
 
- .list-offer{
-  width: 80%;
-  margin: 0 3rem;
- }
+  .offers{
+    width: 100%;
+    height: 1%;
+  }
 
- .offers{
-  width: 6rem;
- }
-
- .offers p{
-  margin-bottom: 1rem;
- }
-
- .guide{
-  display: none;
- }
-
- .guide01{
-  display: block;
- }
-
- .guide1{
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
- }
-
- .guide1 .list-guide{
-  width: 50%;
- }
-
- .list-guide {
-  margin-top: 2rem;
- }
-
- .list-guide h1{
-  color: var(--text-blue);
-  width: 20%;
-  font-size: var(--scd-text);
-  text-align: center;
-  line-height: 8rem;
-}
-
-/* ------- */
-.testimonials{
-  height: 100%;
-}
-/* .testimonial{
-  height: -5rem;
-} */
- .testimonials img{
-  display: none;
- }
-
- .testimony{
-  width: 90%;
- }
-
- .student-testimony{
-  height: 30%;
- }
- .student-testimony h1{
-  margin: 0 0 2rem 0;
- }
- .student-testimony h2{
-  margin: 0 0 2rem 0;
- }
- .student-testimony img{
-  display: block;
-  width: 3rem;
-  height: 3rem;
-  margin: 0 0 1rem 0;
-  border: 1px solid var(--text-blue);
-  border-radius: 50%;
- }
-
- .career{
-  min-height: 40vh;
- }
-
- .footer ul{
-  gap: 2rem;
+  .offer-wrapper{
+    margin: 2rem 3rem;
   }
 }
